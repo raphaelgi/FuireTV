@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrazzerQCR6's Discord Bot</title>
+    <script>
+        function joinDiscord() {
+            alert("You've joined DrazzerQCR6's Discord server!");
+        }
+
+        function addRobloxOption() {
+            var robloxEmail = prompt("Please enter your Roblox email:");
+            var robloxVerified = confirm("Is your Roblox email verified?");
+            if (robloxVerified) {
+                alert("Roblox option added successfully! Email: " + robloxEmail + " (Verified)");
+            } else {
+                alert("Roblox option added successfully! Email: " + robloxEmail + " (Not Verified)");
+            }
+        }
+
+        function subscribeToNewsletter() {
+            var email = prompt("Please enter your email to subscribe to our newsletter:");
+            alert("Thank you for subscribing to our newsletter! Email: " + email);
+        }
+
+        function openSupportTicket() {
+            var issue = prompt("Please describe the issue you're experiencing:");
+            alert("A support ticket has been opened! Issue: " + issue);
+        }
+
+        function purchasePremium() {
+            var confirmation = confirm("Are you sure you want to purchase premium?");
+            if (confirmation) {
+                alert("Congratulations! You've purchased premium.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to DrazzerQCR6's Discord Bot Page</h1>
+    <p>This page includes functionality for interacting with DrazzerQCR6's Discord bot and other options.</p>
+    <button onclick="joinDiscord()">Join Discord</button>
+    <button onclick="addRobloxOption()">Add Roblox Option</button>
+    <button onclick="subscribeToNewsletter()">Subscribe to Newsletter</button>
+    <button onclick="openSupportTicket()">Open Support Ticket</button>
+    <button onclick="purchasePremium()">Purchase Premium</button>
+    <footer>This page has been made by DrazzerQCR6</footer>
+</body>
+</html>
