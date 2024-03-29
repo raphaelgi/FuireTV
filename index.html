@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FuireTV</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #000; /* Black background */
+    }
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .fuiretv {
+        font-size: 3em;
+        font-weight: bold;
+        color: #32CD32; /* Green color */
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* White shadow */
+        animation: glow 1s ease-in-out infinite alternate; /* Glow animation */
+    }
+    @keyframes glow {
+        0% { text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); }
+        100% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); }
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #000; /* Black color */
+        background-color: #32CD32; /* Green color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .button:hover {
+        background-color: #228B22; /* Darker green color on hover */
+    }
+    /* Pub text animation */
+    .pub-text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #fff; /* White color */
+        animation: moveText 10s linear infinite alternate;
+    }
+    @keyframes moveText {
+        0% { left: -100%; }
+        100% { left: 110%; }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 class="fuiretv">FuireTV</h1>
+    <button class="button" onclick="handleClick('Reset Password')">Reset Password</button>
+    <button class="button" onclick="handleClick('Discord Server')">Discord Server</button>
+    <button class="button" onclick="handleClick('Creator')">Creator</button>
+</div>
+<div class="pub-text">FuireTV - Best Software Made by Drazzerqcr6</div>
+
+<script>
+// Function to handle button click
+function handleClick(action) {
+    if (action === 'Creator') {
+        alert('Creator: drazzerqcr6');
+    } else if (action === 'Discord Server') {
+        window.open('https://discord.gg/4TtJ2NwAmS', '_blank');
+    } else {
+        alert(action + ' button clicked!');
+    }
+}
+</script>
+</body>
+</html>
